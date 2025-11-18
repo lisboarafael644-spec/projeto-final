@@ -1,33 +1,95 @@
 * { box-sizing: border-box; }
-html,body { margin:0; padding:0; font-family: "Inter", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial; color:#333; }
+html,body { height: 120vh; background-color: #530905;margin:0; padding:0; font-family: "Inter", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial; color:#333; }
 
 a:hover {
     opacity: 0.7;
 }
 
-header {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #381313;
+header{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 3fr 1fr 1fr 1fr 2fr;
     height: 14vh;
     border-bottom: solid 1px rgb(0, 0, 0, 0.06);
     box-shadow: 0 6px 20px rgba(18,18,18,0.04);
 }
 
-#img-header-logo {
-    width: 100px;
-    height: 100px;
-    background-image: url(../img/logo-site.png);
+.fonte-inicial {
+    font-family: garamond;
+    color: aliceblue;
+    font-size: 1.3em;
+}
+
+#img-header-icone {
+    width: 150px;
+    height: 80px;
+    background-image: url(../img/icon.png);
     background-size: 100%;
+}
+
+#h1 {
     display: flex;
-    justify-self: ;
+    justify-content: center;
+    align-items: center;
+    background-color: #260201;
+}
+
+#encomendas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #260201;
+    padding-top: 40%;
+}
+
+#contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #260201;
+    padding-top: 40%;
+}
+
+#cardapio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #260201;
+    padding-top: 40%;
+}
+
+#img-header-logo {
+    width: 300px;
+    height: 39800px;
+    background-image: url(../img/logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #260201;
+    height: 14vh;
+}
+
+.resto-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #260201;
+}
+
+#h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #260201;
+    height: 14vh;
 }
 #img-header-carrinho {
-    width: 50px;
-    height: 50px;
-    background-image: url(../img/carrinho.png);
+    width: 200px;
+    height: 100px;
+    background-image: url(../img/carrinho-site.png);
     background-size: 100%;
-    display: flex;
-    justify-self: end;
-    justify-self: ;
 }
